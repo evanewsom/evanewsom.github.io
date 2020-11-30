@@ -1,0 +1,110 @@
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #FEF7EF;
+    animation-name: fadeIn;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+#back-button {
+    position: absolute;
+    top: 5%;
+    left: 5%;
+}
+
+#content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding-top: 9%;
+}
+
+#text {
+    background-color: #F2D0C6;
+    border-radius: 48px;
+    padding: 36px;
+    border: solid;
+    border-width: 0.5px;
+    z-index: 2;
+}
+
+#name-text {
+    padding-bottom: 10px;
+    padding-left: 42px;
+    font-size: 36px;
+    font-family: 'Kalam', cursive;
+}
+
+#fact-text {
+    background-color: #FFFDFB;
+    border-radius: 32px;
+    width: 500px;
+    height: 280px;
+    padding: 12px;
+    font-size: 22px;
+    line-height: 140%;
+    border: solid;
+    border-color: #D6BA9B;
+    font-family: 'Poppins', sans-serif;
+}
+
+#animal-head {
+    padding-top: 5%;
+    z-index: 1;
+}
+
+#back-button:hover {
+    cursor: pointer;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeOut {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.5;
+    }
+    100% {
+        opacity: 0;
+    }
+}
+
+.content-fade {
+    animation-name: fadeOut;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes hideAnimal {
+    0% {
+        transform: translate(0);
+    }
+    100% {
+        transform: translate(100%, 0);
+    }
+}
+
+.hidden-animal {
+    animation-name: hideAnimal;
+    animation-duration: 0.2s;
+    animation-iteration-count: 1;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-in;
+}
+

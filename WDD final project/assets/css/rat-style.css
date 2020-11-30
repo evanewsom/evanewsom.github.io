@@ -1,0 +1,26 @@
+#animal-tail {
+    position: absolute;
+    bottom: 0.5%;
+    right: 15%;
+}
+
+#feet-1 {
+    position: absolute;
+    top: 10%;
+    left: 8%;
+}
+
+#feet-2 {
+    position: absolute;
+    bottom: 5%;
+    left: 22%;
+    z-index: 3;
+}
+
+#content {
+    padding-left: 11%;
+}
+
+#animal-head {
+    padding-top: 12%;
+}
